@@ -9,7 +9,6 @@
         android:name="@string/ic_group_parts"
         android:pivotX="@integer/viewport_center_x"
         android:pivotY="@integer/viewport_center_y"
-        android:rotation="90"
         >
 
         <group
