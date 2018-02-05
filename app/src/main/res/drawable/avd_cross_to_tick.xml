@@ -7,8 +7,8 @@
         android:name="@string/cross"
         android:animation="@animator/cross_to_tick" />
 
-    <!--<target-->
-        <!--android:name="@string/groupTickCross"-->
-        <!--android:animation="@animator/rotate_cross_to_tick" />-->
+    <target
+        android:name="@string/groupTickCross"
+        android:animation="@animator/rotate_cross_to_tick" />
 
 </animated-vector>
