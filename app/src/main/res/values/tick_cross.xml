@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- geometry -->
-    <integer name="viewport_width">24</integer>
-    <integer name="viewport_height">24</integer>
-    <integer name="viewport_center_x">12</integer>
-    <integer name="viewport_center_y">12</integer>
-    <!--<string name="path_tick">M19.6,7 L10.4,16.2 M4.8,13.4 L9,17.6</string>-->
-    <string name="path_tick">M4.8,13.4 L9,17.6 M10.4,16.2 L19.6,7</string>
-    <!--<string name="path_cross">M17.6,6.4 L6.4,17.6 M6.4,6.4 L17.6,17.6</string>-->
-    <string name="path_cross">M6.4,6.4 L17.6,17.6 M6.4,17.6 L17.6,6.4</string>
+    <integer name="viewport_width">128</integer>
+    <integer name="viewport_height">128</integer>
+    <integer name="viewport_center_x">64</integer>
+    <integer name="viewport_center_y">64</integer>
+    <!--<string name="path_tick">M4.8,13.4 L9,17.6 M10.4,16.2 L19.6,7</string>-->
+    <string name="path_tick">M 44 32 L 44 64 L 100 64 L 100 64 Z</string>
+    <!--<string name="path_cross">M6.4,6.4 L17.6,17.6 M6.4,17.6 L17.6,6.4</string>-->
+    <string name="path_cross">M 32 40 L 32 56  L 96 56 L 96 40 Z</string>
     <integer name="stroke_width">2</integer>
 
     <!-- names -->
