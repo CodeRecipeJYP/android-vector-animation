@@ -5,7 +5,6 @@
     <integer name="viewport_height">128</integer>
     <integer name="viewport_center_x">64</integer>
     <integer name="viewport_center_y">64</integer>
-    <string name="ic_group_top">M 44 32 L 44 64 L 100 64 L 100 64 Z</string>
     <string name="path_play_top">M 44 32 L 44 64 L 100 64 L 100 64 Z</string>
     <string name="path_play_bottom">M 44 96 L 44 64 L 100 64 L 100 64 Z</string>
     <string name="path_pause_top">M 32 40 L 32 56  L 96 56 L 96 40 Z</string>
@@ -13,15 +12,15 @@
     <integer name="stroke_width">2</integer>
 
     <!-- names -->
+    <string name="ic_group_top">ic_group_top</string>
     <string name="ic_group_parts">ic_group_parts</string>
-    <string name="ic_pathname_top">ic_pathname_bottom</string>
-    <string name="play">play</string>
     <string name="ic_play_pathname_top">playpathnametop</string>
+    <string name="ic_pause_pathname_top">pausepathnametop</string>
 
     <!-- drawing -->
     <color name="stroke_color">#999</color>
 
     <!-- timing -->
-    <integer name="duration">450</integer>
+    <integer name="duration">4000</integer>
 
 </resources>

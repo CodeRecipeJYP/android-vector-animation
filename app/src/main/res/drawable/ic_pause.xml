@@ -12,15 +12,15 @@
         android:rotation="90"
         >
 
-    <group
-        android:name="@string/ic_group_top">
-        <path
-            android:name="@string/ic_pathname_top"
-            android:pathData="@string/path_pause_top"
-            android:strokeWidth="@integer/stroke_width"
-            android:strokeLineCap="square"
-            android:strokeColor="@color/stroke_color"/>
-    </group>
+        <group
+            android:name="@string/ic_group_top">
+            <path
+                android:name="@string/ic_pause_pathname_top"
+                android:pathData="@string/path_pause_top"
+                android:strokeWidth="@integer/stroke_width"
+                android:strokeLineCap="square"
+                android:strokeColor="@color/stroke_color"/>
+        </group>
 
     </group>
 

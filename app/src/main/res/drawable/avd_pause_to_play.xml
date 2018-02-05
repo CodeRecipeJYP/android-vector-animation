@@ -4,7 +4,7 @@
     android:drawable="@drawable/ic_play">
 
     <target
-        android:name="@string/ic_group_parts"
+        android:name="@string/ic_pause_pathname_top"
         android:animation="@animator/pause_to_play" />
 
     <target

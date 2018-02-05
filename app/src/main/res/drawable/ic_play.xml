@@ -8,7 +8,8 @@
     <group
         android:name="@string/ic_group_parts"
         android:pivotX="@integer/viewport_center_x"
-        android:pivotY="@integer/viewport_center_y">
+        android:pivotY="@integer/viewport_center_y"
+        >
 
         <group
             android:name="@string/ic_group_top">
