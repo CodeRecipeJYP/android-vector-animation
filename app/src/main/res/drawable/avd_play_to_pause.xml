@@ -6,7 +6,11 @@
 
     <target
         android:name="@string/ic_play_pathname_top"
-        android:animation="@animator/play_to_pause" />
+        android:animation="@animator/play_to_pause_top" />
+
+    <target
+        android:name="@string/ic_play_pathname_bottom"
+        android:animation="@animator/play_to_pause_bottom" />
 
     <target
         android:name="@string/ic_group_parts"

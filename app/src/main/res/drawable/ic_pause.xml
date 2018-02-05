@@ -21,6 +21,16 @@
                 android:strokeColor="@color/stroke_color"/>
         </group>
 
+        <group
+            android:name="@string/ic_group_bottom">
+            <path
+                android:name="@string/ic_pause_pathname_bottom"
+                android:pathData="@string/path_pause_bottom"
+                android:strokeWidth="@integer/stroke_width"
+                android:strokeLineCap="square"
+                android:strokeColor="@color/stroke_color"/>
+        </group>
+
     </group>
 
 </vector>

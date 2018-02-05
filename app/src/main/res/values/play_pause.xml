@@ -13,9 +13,12 @@
 
     <!-- names -->
     <string name="ic_group_top">ic_group_top</string>
+    <string name="ic_group_bottom">ic_group_bottom</string>
     <string name="ic_group_parts">ic_group_parts</string>
     <string name="ic_play_pathname_top">playpathnametop</string>
+    <string name="ic_play_pathname_bottom">playpathnamebottom</string>
     <string name="ic_pause_pathname_top">pausepathnametop</string>
+    <string name="ic_pause_pathname_bottom">pausepathnamebottom</string>
 
     <!-- drawing -->
     <color name="stroke_color">#999</color>
