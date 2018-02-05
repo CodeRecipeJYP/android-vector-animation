@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_scrolling.*
+import kotlinx.android.synthetic.main.content_scrolling.*
 
 class ScrollingActivity : AppCompatActivity() {
 
@@ -17,6 +18,13 @@ class ScrollingActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
+
+        btn.setOnClickListener { animate() }
+    }
+
+    private fun animate() {
+        val drawable = getDrawable(R.drawable.ic_arrow_forward_black_24dp)
+        ibtn_playpause.setImageDrawable(drawable)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

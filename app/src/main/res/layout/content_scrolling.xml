@@ -8,10 +8,30 @@
     tools:context="com.example.jaeyoungpark.animationplayground.ScrollingActivity"
     tools:showIn="@layout/activity_scrolling">
 
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+        android:orientation="vertical"
+        >
+        <ImageButton
+            android:id="@+id/ibtn_playpause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#a76565"
+            />
+
+        <Button
+            android:id="@+id/btn"
+            android:text="button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/large_text" />
+    </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>
