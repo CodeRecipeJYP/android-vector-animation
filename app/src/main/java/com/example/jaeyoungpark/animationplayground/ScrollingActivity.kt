@@ -36,17 +36,17 @@ class ScrollingActivity : AppCompatActivity() {
         Pair(if (!tick) R.drawable.avd_play_to_pause else R.drawable.avd_pause_to_play
                 , baseContext)
                 .also { tick = !tick }
-                .let {(resId, context) ->
-                    Log.d(TAG, "animate: AnimatedVectorDrawableCompat.create($context, $resId)")
-                    AnimatedVectorDrawableCompat.create(context, resId)
-                }
-                .also {
-                    Log.d(TAG, "animate: ibtn_playpause.setImageDrawable($it)")
-                    ibtn_playpause.setImageDrawable(it)
-                }
-                .also {
-                    Log.d(TAG, "animate: ($it as Animatable).start()")
-                    (it as Animatable).start()
+                .also { (resId, context) ->
+                    listOf(fab_playpause, ibtn_playpause)
+                            .map { ibtn ->
+                                Log.d(TAG, "animate: AnimatedVectorDrawableCompat.create($context, $resId)")
+                                ibtn.setImageResource(resId)
+                                ibtn.drawable
+                            }
+                            .forEach {
+                                Log.d(TAG, "animate: ($it as Animatable).start()")
+                                (it as Animatable).start()
+                            }
                 }
     }
 

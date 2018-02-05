@@ -13,6 +13,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_playpause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#a76565"
+            />
+
         <ImageButton
             android:id="@+id/ibtn_playpause"
             android:layout_width="wrap_content"
