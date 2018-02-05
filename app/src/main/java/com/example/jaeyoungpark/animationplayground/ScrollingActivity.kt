@@ -3,6 +3,8 @@ package com.example.jaeyoungpark.animationplayground
 import android.graphics.drawable.Animatable
 import android.os.Bundle
 import android.support.design.widget.Snackbar
+import android.support.graphics.drawable.AnimatedVectorDrawableCompat
+import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.Menu
@@ -31,11 +33,12 @@ class ScrollingActivity : AppCompatActivity() {
 
     private fun animate() {
         Log.d(TAG, "animate: ")
-        (if (!tick) R.drawable.avd_play_to_pause else R.drawable.avd_pause_to_play)
+        Pair(if (!tick) R.drawable.avd_play_to_pause else R.drawable.avd_pause_to_play
+                , baseContext)
                 .also { tick = !tick }
-                .let {
-                    Log.d(TAG, "animate: getDrawable($it)")
-                    getDrawable(it)
+                .let {(resId, context) ->
+                    Log.d(TAG, "animate: AnimatedVectorDrawableCompat.create($context, $resId)")
+                    AnimatedVectorDrawableCompat.create(context, resId)
                 }
                 .also {
                     Log.d(TAG, "animate: ibtn_playpause.setImageDrawable($it)")
