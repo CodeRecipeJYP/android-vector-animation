@@ -23,7 +23,7 @@ class ScrollingActivity : AppCompatActivity() {
     }
 
     private fun animate() {
-        val drawable = getDrawable(R.drawable.ic_arrow_forward_black_24dp)
+        val drawable = getDrawable(R.drawable.ic_tick)
         ibtn_playpause.setImageDrawable(drawable)
     }
 
