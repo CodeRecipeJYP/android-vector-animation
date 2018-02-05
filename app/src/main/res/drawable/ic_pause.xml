@@ -16,9 +16,8 @@
             <path
                 android:name="@string/ic_pause_pathname_top"
                 android:pathData="@string/path_pause_top"
-                android:strokeWidth="@integer/stroke_width"
-                android:strokeLineCap="square"
-                android:strokeColor="@color/stroke_color"/>
+                android:fillColor="#ff000000"
+                />
         </group>
 
         <group
@@ -26,9 +25,8 @@
             <path
                 android:name="@string/ic_pause_pathname_bottom"
                 android:pathData="@string/path_pause_bottom"
-                android:strokeWidth="@integer/stroke_width"
-                android:strokeLineCap="square"
-                android:strokeColor="@color/stroke_color"/>
+                android:fillColor="#ff000000"
+                />
         </group>
 
     </group>

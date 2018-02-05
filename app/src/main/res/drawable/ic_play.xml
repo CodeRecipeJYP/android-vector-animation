@@ -18,7 +18,8 @@
                 android:pathData="@string/path_play_top"
                 android:strokeWidth="@integer/stroke_width"
                 android:strokeLineCap="square"
-                android:strokeColor="@color/stroke_color"/>
+                android:fillColor="#ff000000"
+                />
         </group>
 
         <group
@@ -28,7 +29,8 @@
                 android:pathData="@string/path_play_bottom"
                 android:strokeWidth="@integer/stroke_width"
                 android:strokeLineCap="square"
-                android:strokeColor="@color/stroke_color"/>
+                android:fillColor="#ff000000"
+                />
         </group>
 
     </group>
