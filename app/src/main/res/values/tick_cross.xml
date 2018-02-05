@@ -5,16 +5,18 @@
     <integer name="viewport_height">128</integer>
     <integer name="viewport_center_x">64</integer>
     <integer name="viewport_center_y">64</integer>
-    <!--<string name="path_tick">M4.8,13.4 L9,17.6 M10.4,16.2 L19.6,7</string>-->
-    <string name="path_tick">M 44 32 L 44 64 L 100 64 L 100 64 Z</string>
-    <!--<string name="path_cross">M6.4,6.4 L17.6,17.6 M6.4,17.6 L17.6,6.4</string>-->
-    <string name="path_cross">M 32 40 L 32 56  L 96 56 L 96 40 Z</string>
+    <string name="ic_group_top">M 44 32 L 44 64 L 100 64 L 100 64 Z</string>
+    <string name="path_play_top">M 44 32 L 44 64 L 100 64 L 100 64 Z</string>
+    <string name="path_play_bottom">M 44 96 L 44 64 L 100 64 L 100 64 Z</string>
+    <string name="path_pause_top">M 32 40 L 32 56  L 96 56 L 96 40 Z</string>
+    <string name="path_pause_bottom">M 32 88 L 32 72 L 96 72 L 96 88 Z</string>
     <integer name="stroke_width">2</integer>
 
     <!-- names -->
-    <string name="tick">tick</string>
-    <string name="cross">cross</string>
-    <string name="groupTickCross">groupTickCross</string>
+    <string name="ic_group_parts">ic_group_parts</string>
+    <string name="ic_pathname_top">ic_pathname_bottom</string>
+    <string name="play">play</string>
+    <string name="ic_play_pathname_top">playpathnametop</string>
 
     <!-- drawing -->
     <color name="stroke_color">#999</color>

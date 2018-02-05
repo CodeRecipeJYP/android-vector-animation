@@ -6,16 +6,21 @@
     android:viewportHeight="@integer/viewport_height">
 
     <group
-        android:name="@string/groupTickCross"
+        android:name="@string/ic_group_parts"
         android:pivotX="@integer/viewport_center_x"
-        android:pivotY="@integer/viewport_center_y">
+        android:pivotY="@integer/viewport_center_y"
+        android:rotation="90"
+        >
 
+    <group
+        android:name="@string/ic_group_top">
         <path
-            android:name="@string/cross"
-            android:pathData="@string/path_cross"
+            android:name="@string/ic_pathname_top"
+            android:pathData="@string/path_pause_top"
             android:strokeWidth="@integer/stroke_width"
             android:strokeLineCap="square"
             android:strokeColor="@color/stroke_color"/>
+    </group>
 
     </group>
 

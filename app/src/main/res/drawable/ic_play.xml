@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="@integer/viewport_width"
+    android:viewportHeight="@integer/viewport_height">
+
+    <group
+        android:name="@string/ic_group_parts"
+        android:pivotX="@integer/viewport_center_x"
+        android:pivotY="@integer/viewport_center_y">
+
+        <group
+            android:name="@string/ic_group_top">
+            <path
+                android:name="@string/ic_play_pathname_top"
+                android:pathData="@string/path_play_top"
+                android:strokeWidth="@integer/stroke_width"
+                android:strokeLineCap="square"
+                android:strokeColor="@color/stroke_color"/>
+        </group>
+
+    </group>
+
+</vector>

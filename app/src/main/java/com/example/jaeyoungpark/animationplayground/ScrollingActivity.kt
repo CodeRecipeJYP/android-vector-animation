@@ -1,7 +1,6 @@
 package com.example.jaeyoungpark.animationplayground
 
 import android.graphics.drawable.Animatable
-import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
@@ -32,7 +31,7 @@ class ScrollingActivity : AppCompatActivity() {
 
     private fun animate() {
         Log.d(TAG, "animate: ")
-        (if (!tick) R.drawable.avd_cross_to_tick else R.drawable.avd_tick_to_cross)
+        (if (!tick) R.drawable.avd_play_to_pause else R.drawable.avd_pause_to_play)
                 .also { tick = !tick }
                 .let {
                     Log.d(TAG, "animate: getDrawable($it)")
