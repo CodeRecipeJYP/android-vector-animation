@@ -1,14 +1,22 @@
 package com.example.jaeyoungpark.animationplayground
 
+import android.graphics.drawable.Animatable
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_scrolling.*
 import kotlinx.android.synthetic.main.content_scrolling.*
 
 class ScrollingActivity : AppCompatActivity() {
+    companion object {
+        val TAG = "ScrollingActivity"
+    }
+
+    private var tick: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,8 +31,21 @@ class ScrollingActivity : AppCompatActivity() {
     }
 
     private fun animate() {
-        val drawable = getDrawable(R.drawable.ic_tick)
-        ibtn_playpause.setImageDrawable(drawable)
+        Log.d(TAG, "animate: ")
+        (if (!tick) R.drawable.avd_cross_to_tick else R.drawable.avd_tick_to_cross)
+                .also { tick = !tick }
+                .let {
+                    Log.d(TAG, "animate: getDrawable($it)")
+                    getDrawable(it)
+                }
+                .also {
+                    Log.d(TAG, "animate: ibtn_playpause.setImageDrawable($it)")
+                    ibtn_playpause.setImageDrawable(it)
+                }
+                .also {
+                    Log.d(TAG, "animate: ($it as Animatable).start()")
+                    (it as Animatable).start()
+                }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
